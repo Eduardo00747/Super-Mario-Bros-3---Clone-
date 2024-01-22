@@ -22,7 +22,7 @@ public class Take_Damage : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // Verifica se a colisão ocorreu com a tag "Cogumelo"
-        if (collision.gameObject.CompareTag("Cogumelo_Vermelho"))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             StartCoroutine(PerformPowerUpSequence());
         }
@@ -32,6 +32,8 @@ public class Take_Damage : MonoBehaviour
     {
         // Ativa a animação
         animator.SetBool("isDamage", true);
+
+        // Dar um Knockback no personagem
 
         // Aguarda o término da animação (tempo pode variar, ajuste conforme necessário)
         yield return new WaitForSeconds(0.3f);
