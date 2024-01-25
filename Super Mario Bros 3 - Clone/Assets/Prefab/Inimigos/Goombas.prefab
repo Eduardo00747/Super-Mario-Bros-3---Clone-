@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7591152819294253423}
   - component: {fileID: 2095335523938912020}
   - component: {fileID: 1536030893069794937}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Goombas
   m_TagString: EnemyBounce
   m_Icon: {fileID: 0}
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8829f8ec41ed3f34db020c93ef2880f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 1.3
 --- !u!95 &1536030893069794937
 Animator:
   serializedVersion: 5

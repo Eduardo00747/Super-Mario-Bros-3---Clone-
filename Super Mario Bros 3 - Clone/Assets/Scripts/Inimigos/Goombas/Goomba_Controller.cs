@@ -24,4 +24,13 @@ public class Goomba_Controller : MonoBehaviour
             isMovingLeft = !isMovingLeft;
         }
     }
+
+        private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Barricada"))
+        {
+            // Inverte a direção do movimento
+            isMovingLeft = !isMovingLeft;
+        }
+    }
 }
