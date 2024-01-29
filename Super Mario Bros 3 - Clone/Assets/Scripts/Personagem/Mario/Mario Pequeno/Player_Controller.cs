@@ -15,7 +15,6 @@ public class Player_Controller : MonoBehaviour
     private Animator animator;
     private SpriteRenderer spriteRenderer;
     private bool canJump = false;
-
     private CinemachineVirtualCamera virtualCamera;
 
     private void Start()
@@ -62,7 +61,7 @@ public class Player_Controller : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             canJump = false;
-        }
+        } 
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

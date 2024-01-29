@@ -11,6 +11,8 @@ TagManager:
   - Box
   - Barricada
   - Cogumelo_Verde
+  - Casco
+  - Casco_Vermelho
   layers:
   - Default
   - TransparentFX

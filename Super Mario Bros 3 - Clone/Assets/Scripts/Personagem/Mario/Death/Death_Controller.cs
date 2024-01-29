@@ -21,7 +21,7 @@ public class Death_Controller : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // Verificar se a colisão ocorreu 
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy")||collision.gameObject.CompareTag("Casco_Vermelho") )
         {
             StartCoroutine(DeathSequence());
         }

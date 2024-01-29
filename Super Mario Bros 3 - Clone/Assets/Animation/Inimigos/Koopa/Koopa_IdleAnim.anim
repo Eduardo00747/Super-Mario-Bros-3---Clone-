@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Idle
+  m_Name: Koopa_IdleAnim
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,9 +21,9 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 21300000, guid: 6016183e4c1979b42b0abb804a72979d, type: 3}
+      value: {fileID: 21300000, guid: 4b712fc728cf06441b7348b4c84c2168, type: 3}
     - time: 0.083333336
-      value: {fileID: 21300000, guid: 1c974506f38f95941a8b2664b311f538, type: 3}
+      value: {fileID: 21300000, guid: 66583e6959f57bb4ab0961350936c39a, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,8 +46,8 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 6016183e4c1979b42b0abb804a72979d, type: 3}
-    - {fileID: 21300000, guid: 1c974506f38f95941a8b2664b311f538, type: 3}
+    - {fileID: 21300000, guid: 4b712fc728cf06441b7348b4c84c2168, type: 3}
+    - {fileID: 21300000, guid: 66583e6959f57bb4ab0961350936c39a, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
