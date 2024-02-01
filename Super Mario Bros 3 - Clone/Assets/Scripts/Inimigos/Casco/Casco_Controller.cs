@@ -12,7 +12,7 @@ public class Casco_Controller : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Barricada"))
+        if (other.CompareTag("Barricada")||other.CompareTag("Box"))
         {
             // Inverte a direção quando colide com a tag "Barricada"
             rb.velocity = new Vector2(-rb.velocity.x, rb.velocity.y);

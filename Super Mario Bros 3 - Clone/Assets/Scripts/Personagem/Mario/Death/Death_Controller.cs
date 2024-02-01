@@ -21,7 +21,15 @@ public class Death_Controller : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // Verificar se a colisão ocorreu 
-        if (collision.gameObject.CompareTag("Enemy")||collision.gameObject.CompareTag("Casco_Vermelho") )
+        if (collision.gameObject.CompareTag("Enemy")||collision.gameObject.CompareTag("Casco_Vermelho"))
+        {
+            StartCoroutine(DeathSequence());
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy")||collision.gameObject.CompareTag("Casco_Vermelho")||collision.gameObject.CompareTag("FireBall") ||collision.gameObject.CompareTag("Planta Carnivora"))
         {
             StartCoroutine(DeathSequence());
         }
@@ -34,6 +42,14 @@ public class Death_Controller : MonoBehaviour
         GetComponent<BoxCollider2D>().isTrigger = true;
         
         animator.SetBool("isDeath", true); // Ativa a animação
+
+        //Tempo de espera 
+        yield return new WaitForSeconds(0.001f);
+
+        // Desativar o collider do objeto 
+        GetComponent<BoxCollider2D>().enabled = false; // Desativa o BoxCollider2D
+
+        //Tempo de espera 
         yield return new WaitForSeconds(0.1f);
 
         // Adiciona um pequeno impulso vertical

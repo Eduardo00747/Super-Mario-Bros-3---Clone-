@@ -13,6 +13,8 @@ TagManager:
   - Cogumelo_Verde
   - Casco
   - Casco_Vermelho
+  - FireBall
+  - Planta Carnivora
   layers:
   - Default
   - TransparentFX
