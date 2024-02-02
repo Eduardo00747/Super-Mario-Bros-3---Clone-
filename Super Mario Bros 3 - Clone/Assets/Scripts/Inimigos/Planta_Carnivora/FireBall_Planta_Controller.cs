@@ -18,10 +18,10 @@ public class FireBall_Planta_Controller : MonoBehaviour
     private IEnumerator InstantiateTwoFireballsWithInterval()
     {
         // Primeira bola de fogo após 3 segundos
-        yield return StartCoroutine(InstantiateFireballAfterDelay(7f));
+        yield return StartCoroutine(InstantiateFireballAfterDelay(3f));
 
         // Aguarda mais 4 segundos
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(4f);
 
         // Segunda bola de fogo
         yield return StartCoroutine(InstantiateFireballAfterDelay(0f)); // Sem espera adicional

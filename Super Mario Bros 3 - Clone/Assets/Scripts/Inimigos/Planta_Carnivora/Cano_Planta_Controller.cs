@@ -54,6 +54,18 @@ private IEnumerator AplicarForcaSubida()
     // Espera por 3 segundos
     yield return new WaitForSeconds(1.37f);
 
+    // Ativa o script do objeto chamado "FireBall_Planta_Controller"
+    // Aqui, você procura pelo script "FireBall_Planta_Controller" no prefab da planta carnívora e o ativa.
+    FireBall_Planta_Controller fireBallPlantaController = plantaCarnivoraPrefab.GetComponentInChildren<FireBall_Planta_Controller>();
+    if (fireBallPlantaController != null)
+    {
+        fireBallPlantaController.enabled = true; // Ativa o script "FireBall_Planta_Controller"
+    }
+    else
+    {
+        Debug.LogError("Não foi possível encontrar o script FireBall_Planta_Controller no prefab plantaCarnivora.");
+    }
+
     // Para de aplicar a força após 1.3 segundos
     rbPlanta.velocity = Vector2.zero;
 
