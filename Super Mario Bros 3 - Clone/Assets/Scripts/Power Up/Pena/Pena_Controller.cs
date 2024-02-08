@@ -34,9 +34,16 @@ public class Pena_Controller : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // Verifica se colidiu com "Player", "Ground" ou "Box"
-        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Box"))
+        if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Box"))
         {
             shouldMove = false; // Para o movimento
+        }
+
+        // Verifica se colidiu com "Player", "Ground" ou "Box"
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            // Destrói o objeto atual
+            Destroy(gameObject);
         }
     }
 }

@@ -133,21 +133,21 @@ public class Hold_Controller : MonoBehaviour
     }
 
     private IEnumerator ChangeTagAndActivateScript(Rigidbody2D rb)
-{
-    // Aguarda 0.1 segundo
-    yield return new WaitForSeconds(0.1f);
-
-    // Muda a tag do objeto e ativa o script Casco_Controller
-    if (rb.gameObject != null)
     {
-        rb.gameObject.tag = "Casco_Vermelho";
-        Casco_Controller cascoController = rb.gameObject.GetComponent<Casco_Controller>();
-        if (cascoController != null)
+        // Aguarda 0.1 segundo
+        yield return new WaitForSeconds(0.1f);
+
+        // Muda a tag do objeto e ativa o script Casco_Controller
+        if (rb.gameObject != null)
         {
-            cascoController.enabled = true;
+            rb.gameObject.tag = "Casco_Vermelho";
+            Casco_Controller cascoController = rb.gameObject.GetComponent<Casco_Controller>();
+            if (cascoController != null)
+            {
+                cascoController.enabled = true;
+            }
         }
     }
-}
 
     private IEnumerator DisableKickAnimation()
     {

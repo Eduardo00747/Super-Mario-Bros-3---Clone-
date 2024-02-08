@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 2529329204145591587}
   - component: {fileID: 7198445651657302318}
   - component: {fileID: 996425235312552044}
+  - component: {fileID: 3501411607048973108}
   m_Layer: 6
   m_Name: Mario 2
   m_TagString: Player
@@ -242,6 +243,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   holdItemTransform: {fileID: 1333135292172610568}
+--- !u!114 &3501411607048973108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3159692376412267152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8d68e06dbd81c944b76f41722445eaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  marioGrandePrefab: {fileID: 7139436765237675571, guid: ff2d02c375365ba4fbdb266e0d1473cb, type: 3}
 --- !u!1 &3971761144647001131
 GameObject:
   m_ObjectHideFlags: 0

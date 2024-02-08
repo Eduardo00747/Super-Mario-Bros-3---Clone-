@@ -22,7 +22,15 @@ public class Take_Damage : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // Verifica se a colisão ocorreu com a tag "Cogumelo"
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy")||collision.gameObject.CompareTag("Casco_Vermelho"))
+        {
+            StartCoroutine(PerformPowerUpSequence());
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("FireBall")||other.CompareTag("Planta Carnivora"))
         {
             StartCoroutine(PerformPowerUpSequence());
         }
